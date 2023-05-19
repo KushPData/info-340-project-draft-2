@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
+import { UploadFormItem } from './UploadFormItem';
 
 export function Upload(props) {
     return (
@@ -47,36 +48,13 @@ export function Upload(props) {
                             Upload Event Here
                         </h2>
                     </div>
-                    <div className="upload-form-item">
-                        <label for="name">Club/Organization Name:</label>
-                        <input type="text" id="name" name="name" />
-                    </div>
 
-                    <div className="upload-form-item">
-                        <label for="event">Event Title:</label>
-                        <input type="text" id="event" name="event" />
+                    <div>
+                        {props.list.map((name) => 
+                            (<UploadFormItem name={name} />)
+                        )};
                     </div>
-
-                    <div className="upload-form-item">
-                        <label for="descript">Event Description:</label>
-                        <input type="text" id="descript" name="descript" />
-                    </div>
-
-                    <div className="upload-form-item">
-                        <label for="date">Event Date:</label>
-                        <input type="text" id="date" name="date" />
-                    </div>
-
-                    <div className="upload-form-item">
-                        <label for="time">Event Time:</label>
-                        <input type="text" id="time" name="time" />
-                    </div>
-
-                    <div className="upload-form-item">
-                        <label for="key">Club/Organization Key:</label>
-                        <input type="text" id="key" name="key" />
-                    </div>
-
+                    
                     <div className="upload-form-item">
                         <button type="submit">Submit Event</button>
                     </div>
