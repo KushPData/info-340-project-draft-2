@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './Header';
 import { LargeMenu } from './LargeMenu';
 import { LargeSearch } from './LargeSearch';
+import { SearchBox } from './SearchBox';
 import { Footer } from './Footer';
 import { UploadFormItem } from './UploadFormItem';
 
@@ -36,14 +37,9 @@ export function Upload(props) {
                     <LargeMenu />
 
                     <LargeSearch />
-
-                    <SearchBox />
                 </div>
 
-                <div className="search-box">
-                    <label for="search-id">Search: </label>
-                    <input id="search-id" className="search-engine" type="search" name="search" />
-                </div>
+                <SearchBox />
 
                 <form className="upload-form-container">
                     <div className="upload-form-item">

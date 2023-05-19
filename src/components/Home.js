@@ -3,6 +3,7 @@ import { Header } from './Header';
 import { Footer } from './Footer';
 import { LargeMenu } from './LargeMenu';
 import { LargeSearch } from './LargeSearch';
+import { SearchBox } from './SearchBox';
 import EventItemsList from './EventItemsList';
 
 export function Home(props) {
@@ -28,14 +29,9 @@ export function Home(props) {
 
                     <LargeSearch />
 
-                    <SearchBox />
-
                 </div>
 
-                <div className="search-box">
-                    <label for="search-id">Search: </label>
-                    <input id="search-id" className="search-engine" type="search" name="search" />
-                </div>
+                <SearchBox />
 
 
                 <div className="my-events-container">
