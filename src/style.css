@@ -183,8 +183,6 @@ h2 {
     border: 2px solid black;
     justify-content: center;
     margin: 0 15px;
-    border-top-right-radius: 10px;
-    border-top-left-radius: 10px;
     height: 30px;
     align-items: center;
     background-color: #D9D9D9;
@@ -239,10 +237,10 @@ h2 {
 }
 
 /* adds rounded edges on just bottom of group */
-.upcoming-events-container .events-item:nth-of-type(4) {
+/* .upcoming-events-container .events-item:nth-of-type(4) {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-}
+} */
 
 /* affects styling for the container of past events on the home page */
 .past-events-container {

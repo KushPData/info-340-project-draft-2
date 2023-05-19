@@ -41,7 +41,15 @@ export function Home(props) {
                 </div>
 
                 <div className="upcoming-events-container">
-                    <EventItemsList events={props.events}/>
+                    <div className="events-title">
+                        <h3>Upcoming Events</h3>
+                    </div>
+                    <EventItemsList events={props.events} />
+
+                    <div className="events-title">
+                        <h3>Past Events</h3>
+                    </div>
+                    <EventItemsList events={props.pastEvents} />
                 </div>
             </main>
         </div>

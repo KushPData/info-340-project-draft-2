@@ -16,9 +16,6 @@ function EventCard(props) {
 function EventItemsList(props) {
     return (
         <div>
-            <div className="events-title">
-                <h3>Upcoming Events</h3>
-            </div>
             <div>
                 {props.events.map((event) => (
                     <EventCard key={event.name} eventData={event} />
