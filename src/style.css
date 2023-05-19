@@ -1,0 +1,539 @@
+/*making all the elements border-boxes */
+* {
+    box-sizing: border-box;
+}
+
+/* copyright for footer on every page */
+footer p {
+    color: #E8D3A2;
+}
+
+/* email and phone number links for footer on every page */
+footer a {
+    color: #E8D3A2;
+    text-decoration: none;
+}
+
+/* includes all header elements: logo, heading, user-picture */
+.header-container {
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    background-color: #424242;
+    align-items: center;
+    border: 3px solid black;
+}
+
+/* logo in top-right of every page */
+.uw-logo {
+    width: 67px;
+    height: 45px;
+}
+
+/* Husky Event Finder title on every page */
+.heading {
+    color: #E8D3A2;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* not sure what this does, can't find a pages class */
+/* .pages {
+    display: none;
+} */
+
+/* user picture in top-right of every page */
+.user-pic {
+    height: 60px;
+    width: 60px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+
+/* centers the logo into the left corner */
+.header-item:nth-of-type(1) {
+    height: 100%;
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 0;
+    justify-content: left;
+    align-items: center;
+    margin-left: 15px;
+}
+
+/* centers the Husky Event Finder title overall center */
+.header-item:nth-of-type(2) {
+    height: 100%;
+    display: flex;
+    flex-basis: 50%;
+    flex-grow: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* centers the user picture into the right corner */
+.header-item:nth-of-type(3) {
+    height: 100%;
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 0;
+    justify-content: right;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* all the elements of the page: nav, header, body, footer*/
+body {
+    background-color: #c6ddf4;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* styling for the main content of the page*/
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Events that have a link to their specific event page */
+.event-name a {
+    color: #9310D1;
+}
+
+/* search engine for mobile version not in line with nav bar */
+.search-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+/* affects both search bars for mobile and desktop version */
+.search-engine {
+    margin: 4px;
+    border-radius: 5px;
+}
+
+/* affects the container that includes the "My Events" title*/
+.my-events-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* My Events title on mobile version */
+.my-events {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-left: 15px;
+    padding: 5px;
+}
+
+/* navigation bar list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* affects only the li elements that are inside a nav element*/
+nav li {
+    float: left;
+}
+
+/* affects only the a elements inside an li element*/
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* identifies which page you are currently on in nav bar */
+.active {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* affects all h2 headings*/
+h2 {
+    font-size: 20px;
+}
+
+/* affects the container that houses all the upcoming events */
+.upcoming-events-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* affects the div that contains the "Upcoming Events" title*/
+.events-title {
+    display: flex;
+    border: 2px solid black;
+    justify-content: center;
+    margin: 0 15px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 30px;
+    align-items: center;
+    background-color: #D9D9D9;
+}
+
+/* affects all h3 inside .events-title */
+.events-title h3 {
+    font-size: 16px;
+    color: #9310D1;
+}
+
+/* affects all boxes that contain information about events */
+.events-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-right: 2px solid black;
+    border-left: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 87.5px;
+    margin: 0 15px;
+    background-color: #F0F0F0;
+    flex: auto;
+}
+
+/* affects the styling of an event's name on the page */
+.event-name {
+    display: flex;
+    flex-basis: 60%;
+    justify-content: left;
+    align-items: center;
+    margin: 10px;
+    flex: auto;
+}
+
+/* affects all p elements inside .event-name */
+.event-name p {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* styling for an event's date on the page*/
+.event-date {
+    display: flex;
+    flex-basis: 40%;
+    justify-content: right;
+    margin: 10px;
+    color: #575757;
+    font-weight: bold;
+    flex-grow: 1;
+}
+
+/* adds rounded edges on just bottom of group */
+.upcoming-events-container .events-item:nth-of-type(4) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* affects styling for the container of past events on the home page */
+.past-events-container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* adds rounded edges on just bottom of group */
+.past-events-container .events-item:nth-of-type(3) {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* affects the footer on every page */
+footer {
+    margin-top: auto;
+    width: 100%;
+    background-color: #424242;
+    padding: 5px 15px;
+    border: 2px solid black;
+}
+
+/* nav links in footer. all a elements in nav elements */
+nav a {
+    text-decoration: none;
+    color: #E8D3A2;
+}
+
+/* desktop version of nav bar, title, and search bar */
+.main-box-lg {
+    display: none;
+}
+
+/* affects all .my-events inside .main-box-lg */
+.main-box-lg .my-events {
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    background-color: #D9D9D9;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* desktop version of nav. all ul elements inside .lg-menu */
+.lg-menu ul {
+    display: flex;
+    justify-content: center;
+    background-color: #D9D9D9;
+    height: 40px;
+    align-items: center;
+    flex-basis: 50%;
+    border-radius: 10px;
+    margin: 10px;
+    border: 2px solid black;
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+/* desktop version of nav. All li elements inside .lg-menu */
+.lg-menu li {
+    display: none;
+}
+
+/* desktop version of nav. specifies the styling of the last li child in .lg-menu */
+.lg-menu li:last-child {
+    border-right: none;
+}
+
+/* desktop version of search bar */
+.lg-search {
+    display: flex;
+    flex-basis: 25%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+}
+
+/* affects all inputs in .lg-search */
+.lg-search input {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+/* affects all .search-key elements in .lg-search elements*/
+.lg-search .search-key {
+    flex-basis: 50%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    vertical-align: middle;
+    text-align: right;
+}
+
+/* affects the styling of all elements in <main> on events-example page */
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* affects the style of the .main-item on events-example page */
+.main-item {
+    flex: 1;
+}
+
+/* affects styling of .component on events-example page */
+.component {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 1rem;
+}
+
+/* affects styling of .title on events-example page */
+.title {
+    background-color: #f1f1f1;
+    text-align: center;
+    vertical-align: middle;
+    height: 10%;
+}
+
+/* affects the styling of .about on events-example page */
+.about {
+    background-color: #c6ddf4;
+    height: 80%;
+}
+
+/* affects the height of the html element*/
+html {
+    height: 100%;
+}
+
+/* affects the styling of .calendar-container on calendar page */
+.calendar-container {
+    display: flex;
+}
+
+/* affects the styling of .calendar-item on events-example page */
+.calendar-item {
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* utilize day calendar in mobile version */
+.day-calendar {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 75%;
+}
+
+/* don't utilize month calendar in mobile version */
+.month-calendar {
+    display: none;
+}
+
+/* affects the styling of .upload-form-container on upload-event page */
+.upload-form-container {
+    background-color: #c6ddf4;
+    margin-right: 20px;
+    margin-left: 20px;
+    border-radius: 15px;
+}
+
+/* affects the styling of .upload-form-item on upload-event page */
+.upload-form-item {
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+/* affects the background on review page */
+.review-background {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+    color: #ffffff;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+/* affects the styling of .review-text-background on review page */
+.review-text-background {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 5px;
+    border-radius: 3px;
+}
+
+/* desktop version modifications */
+@media (min-width: 992px) {
+    /* background image instead of light blue */
+    body {
+        background-image: url('../public/UW_Campus-lg.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    /* don't utilize mobile nav bar */
+    .nav-sm {
+        display: none;
+    }
+
+    /* letters are black */
+    nav a {
+        color: #000000;
+    }
+
+    /* don't utilize My Events title on desktop version */
+    .my-events-container {
+        display: none;
+    }
+
+    /* don't utilize same search bar as mobile version, use one in line with nav bar */
+    .search-box {
+        display: none;
+    }
+
+    /* Husky Event Finder title on every page */
+    .heading {
+        font-size: 24px;
+    }
+
+    /* Past Events and Upcoming Events titles on home page */
+    .events-title h3 {
+        font-size: 18px;
+    }
+
+    /* link items in nav bar to switch pages */
+    .lg-menu ul li {
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: 33%;
+        display: inline;
+        color: black;
+        text-align: center;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    /* contains page title, nav bar, and search bar */
+    .main-box-lg {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* don't utilize day calendar */
+    .day-calendar {
+        display: none;
+    }
+
+    /* utilize month calendar */
+    .month-calendar {
+        display: flex;
+        margin-right: auto;
+        margin-left: auto;
+        margin-bottom: 10px;
+        max-width: 75%;
+    }
+
+    /* effects event title (white area) on event-example page */
+    .title {
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        margin-top: 30px;
+        margin-right: 30px;
+        margin-left: 30px;
+        height: 10%;
+    }
+
+    /* effects description (light blue area) on event-example page */
+    .about {
+        margin-right: 30px;
+        margin-left: 30px;
+        height: 80%;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+}
