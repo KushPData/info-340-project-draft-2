@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './Header';
+import { LargeMenu } from './LargeMenu';
 import { Footer } from './Footer';
 import { UploadFormItem } from './UploadFormItem';
 
@@ -31,6 +32,8 @@ export function Upload(props) {
                         </ul>
                     </nav>
 
+                    <LargeMenu />
+
                     <div className="lg-search">
                         <label className="search-key" for="search-id">Search: </label>
                         <input id="search-id" className="search-engine" type="search" name="search" />
@@ -52,9 +55,9 @@ export function Upload(props) {
                     <div>
                         {props.list.map((name) => 
                             (<UploadFormItem name={name} />)
-                        )};
+                        )}
                     </div>
-                    
+
                     <div className="upload-form-item">
                         <button type="submit">Submit Event</button>
                     </div>
