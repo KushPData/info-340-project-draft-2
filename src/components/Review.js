@@ -6,7 +6,7 @@ import { SearchBox } from './SearchBox';
 import { Footer } from './Footer';
 import { UploadFormItem } from './UploadFormItem';
 
-export function Upload(props) {
+export function Review(props) {
     return (
         <div>
             <nav className="nav-sm">
@@ -31,24 +31,6 @@ export function Upload(props) {
                 </div>
 
                 <SearchBox />
-
-                <form className="upload-form-container">
-                    <div className="upload-form-item">
-                        <h2>
-                            Upload Event Here
-                        </h2>
-                    </div>
-
-                    <div>
-                        {props.list.map((name) => 
-                            (<UploadFormItem name={name} />)
-                        )}
-                    </div>
-
-                    <div className="upload-form-item">
-                        <button type="submit">Submit Event</button>
-                    </div>
-                </form>
             </main>
             <Footer />
         </div>
