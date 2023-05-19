@@ -17,7 +17,7 @@ export function Home(props) {
                     <li><a href="#/">Review</a></li>
                 </ul>
             </nav>
-            <Header />
+            <Header images={props.images}/>
             <main>
                 <div className="main-box-lg">
 
