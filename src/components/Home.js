@@ -2,6 +2,7 @@ import React from 'react';
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { LargeMenu } from './LargeMenu';
+import { LargeSearch } from './LargeSearch';
 import EventItemsList from './EventItemsList';
 
 export function Home(props) {
@@ -25,10 +26,10 @@ export function Home(props) {
 
                     <LargeMenu />
 
-                    <div className="lg-search">
-                        <label className="search-key" for="search-id">Search: </label>
-                        <input id="search-id" className="search-engine" type="search" name="search" />
-                    </div>
+                    <LargeSearch />
+
+                    <SearchBox />
+
                 </div>
 
                 <div className="search-box">

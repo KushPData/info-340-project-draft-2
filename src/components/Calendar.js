@@ -1,6 +1,7 @@
 import React from 'react';
 import { Header } from './Header';
 import { LargeMenu } from './LargeMenu';
+import { LargeSearch } from './LargeSearch';
 import { Footer } from './Footer';
 
 export function Calendar(props) {
@@ -24,10 +25,9 @@ export function Calendar(props) {
 
                     <LargeMenu />
 
-                    <div className="lg-search">
-                        <label className="search-key" for="search-id">Search: </label>
-                        <input id="search-id" className="search-engine" type="search" name="search" />
-                    </div>
+                    <LargeSearch />
+
+                    <SearchBox />
                 </div>
 
                 <div className="search-box">
