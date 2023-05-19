@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Anna Shade, Kush Patel, Nathaniel Lee, Anay Deshpande">
+    <meta name="description"
+        content="Husky Event Finder Event Uploader allows representatives of a club or organization to submit events to the catalog of the site.">
+    <title>Upload Event - Husky Event Finder</title>
+
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/browser-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav-sm">
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="calendar.html" target="_self">Calendar</a></li>
+            <li><a href="event-upload.html" class="active" target="_self">Upload</a></li>
+            <li><a href="review.html" target="_self">Review</a></li>
+        </ul>
+    </nav>
+    <header class="header-container">
+        <div class="header-item">
+            <img class="uw-logo" src="img/UW_Logo.png" alt="University of Washington logo">
+        </div>
+
+        <div class="header-item">
+            <h1 class="heading">Husky Event Finder</h1>
+        </div>
+
+        <div class="header-item">
+            <img class="user-pic" src="img/user.jpg" alt="User Picture">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-box-lg">
+            <div class="my-events">
+                <h2>Upload Event</h2>
+            </div>
+            <!-- nav bar for desktop version -->
+            <nav class="lg-menu">
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="calendar.html" target="_self">Event Calendar</a></li>
+                    <li><a href="event-upload.html" target="_self">Upload Event</a></li>
+                    <li><a href="review.html" target="_self">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="lg-search">
+                <label class="search-key" for="search-id">Search: </label><input id="search-id" class="search-engine"
+                    type="search" name="search">
+            </div>
+        </div>
+        <div class="search-box">
+            <label for="search-id">Search: </label><input id="search-id" class="search-engine" type="search"
+                name="search">
+        </div>
+
+        <form class="upload-form-container">
+            <div class="upload-form-item">
+                <h2>
+                    Upload Event Here
+                </h2>
+            </div>
+            <div class="upload-form-item">
+                <label for="name">Club/Organization Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+
+            <div class="upload-form-item">
+                <label for="event">Event Title:</label>
+                <input type="text" id="event" name="event">
+            </div>
+
+            <div class="upload-form-item">
+                <label for="descript">Event Description:</label>
+                <input type="text" id="descript" name="descript">
+            </div>
+
+            <div class="upload-form-item">
+                <label for="date">Event Date:</label>
+                <input type="text" id="date" name="date">
+            </div>
+
+            <div class="upload-form-item">
+                <label for="time">Event Time:</label>
+                <input type="text" id="time" name="time">
+            </div>
+
+            <div class="upload-form-item">
+                <label for="key">Club/Organization Key:</label>
+                <input type="text" id="key" name="key">
+            </div>
+
+            <div class="upload-form-item">
+                <button type="submit">Submit Event</button>
+            </div>
+        </form>
+
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <p><a href="mailto:contact@hef.uw.edu"><span class="material-icons">email: </span>contact@hef.uw.edu</a></p>
+            <p><a href="tel:206-532-6703"><span class="material-icons">phone: </span>206-532-6703</a></p>
+            <p>&copy; University of Washington 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

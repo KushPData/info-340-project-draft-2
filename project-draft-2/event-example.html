@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Anna Shade, Kush Patel, Nathaniel Lee, Anay Deshpande">
+    <meta name="description" content="Husky Event Finder Exhibit Event page allows University of Washington students to view details about the upcoming Exhibit: History of Costumes event.">
+    <title>Event - Exhibit</title>
+
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/browser-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- nav bar for mobile version -->
+    <nav class="nav-sm">
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="calendar.html" target="_self">Calendar</a></li>
+            <li><a href="event-upload.html" target="_self">Upload</a></li>
+            <li><a href="review.html" target="_self">Review</a></li>
+        </ul>
+    </nav>
+
+    <!-- general header for all pages, contains 2 images -->
+    <header class="header-container">
+        <div class="header-item">
+            <img class="uw-logo" src="img/UW_Logo.png" alt="University of Washington logo">
+        </div>
+
+        <div class="header-item">
+            <h1 class="heading">Husky Event Finder</h1>
+        </div>
+
+        <div class="header-item">
+            <img class="user-pic" src="img/user.jpg" alt="User Picture">
+        </div>
+    </header>
+
+    <!-- main content of the page -->
+    <main class="main-container">
+        <div class="main-item">
+            <div class="main-box-lg">
+                <!-- title of specific page, only appears on desktop version -->
+                <div class="my-events">
+                    <h2>Event Overview</h2>
+                </div>
+                <!-- nav bar for desktop version -->
+                <nav class="lg-menu">
+                    <ul>
+                        <li><a href="index.html" target="_self">Home</a></li>
+                        <li><a href="calendar.html" target="_self">Event Calendar</a></li>
+                        <li><a href="event-upload.html" target="_self">Upload Event</a></li>
+                        <li><a href="review.html" target="_self">Reviews</a></li>
+                    </ul>
+                </nav>
+
+                <!-- search bar for desktop version is in line with nav bar -->
+                <div class="lg-search">
+                    <label class="search-key" for="search-id">Search: </label><input id="search-id" class="search-engine"
+                        type="search" name="search">
+                </div>
+            </div>
+
+            <!-- search bar for mobile version below the nav bar -->
+            <div class="search-box">
+                <label for="search-id">Search: </label><input id="search-id" class="search-engine" type="search" name="search">
+            </div>
+
+            <!-- the title of the event -->
+            <div class="title">
+                <div class="component">
+                    <h2>Exhibit: History of Costume</h2>
+                </div>
+            </div>
+            
+            <!-- description of the event -->
+            <div class="about">
+                <div class="component">
+                    <h3>Description</h3>
+                    <p>
+                        Come on over to Allen Library to see Kat Lewis' newest exhibit on fashion throughout the ages! See old fashion magazines and learn about the fashion revolutionaries of the past.
+                    </p>
+                    <h3>Date and Time</h3>
+                    <p>Date: TUE, May 02</p>
+                    <p>Time: 2:00 - 4:00 pm</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- general footer for all pages, contains 2 icons and copyright -->
+    <footer>
+        <div class="footer-container">
+            <p><a href="mailto:contact@hef.uw.edu"><span class="material-icons">email: </span>contact@hef.uw.edu</a></p>
+            <p><a href="tel:206-532-6703"><span class="material-icons">phone: </span>206-532-6703</a></p>
+            <p>&copy; University of Washington 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>

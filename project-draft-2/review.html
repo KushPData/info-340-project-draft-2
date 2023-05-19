@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Anna Shade, Kush Patel, Nathaniel Lee, Anay Deshpande">
+    <meta name="description"
+        content="Husky Event Finder Overview Review page allows University of Washington students to view all reviews for events.">
+    <title>Overview Reviews - Husky Event Finder</title>
+
+    <!-- normalize.css for cross-browser stuff -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+
+    <!-- favicon -->
+    <link rel="icon" href="img/browser-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav class="nav-sm">
+        <ul>
+            <li><a href="index.html" target="_self">Home</a></li>
+            <li><a href="calendar.html" target="_self">Calendar</a></li>
+            <li><a href="event-upload.html" target="_self">Upload</a></li>
+            <li><a href="review.html" class="active" target="_self">Review</a></li>
+        </ul>
+    </nav>
+    <header class="header-container">
+        <div class="header-item">
+            <img class="uw-logo" src="img/UW_Logo.png" alt="University of Washington logo">
+        </div>
+
+        <div class="header-item">
+            <h1 class="heading">Husky Event Finder</h1>
+        </div>
+
+        <div class="header-item">
+            <img class="user-pic" src="img/user.jpg" alt="User Picture">
+        </div>
+    </header>
+
+    <main>
+        <div class="main-box-lg">
+            <div class="my-events">
+                <h2>Overview Reviews</h2>
+            </div>
+            <nav class="lg-menu">
+                <ul>
+                    <li><a href="index.html" target="_self">Home</a></li>
+                    <li><a href="calendar.html" target="_self">Event Calendar</a></li>
+                    <li><a href="event-upload.html" target="_self">Upload Event</a></li>
+                    <li><a href="review.html" target="_self">Reviews</a></li>
+                </ul>
+            </nav>
+            <div class="lg-search">
+                <label class="search-key" for="search-id">Search: </label><input id="search-id" class="search-engine" type="search"
+                    name="search">
+            </div>
+        </div>
+        <div class="search-box">
+            <label for="search-id">Search: </label><input id="search-id" class="search-engine" type="search" name="search">
+        </div>
+
+        <div class="overview-reviews-container">
+            <div class="event-review review-background">
+                <h2>Desi Dhamaka SASA</h2>
+                <p>Overall Rating: 4/5</p>
+                <p>Comments:</p>
+                <ul>
+                    <li>Good event! Loved the organization.</li>
+                    <li>The speakers were excellent.</li>
+                    <li>Would definitely attend again sometime.</li>
+                </ul>
+            </div>
+
+
+            <div class="event-review review-background">
+                <h2>ISA PotLuck</h2>
+                <p>Overall Rating: 3/5</p>
+                <p>Comments:</p>
+                <ul>
+                    <li>Amazing event, but could use better time management.</li>
+                    <li>Interesting activities, but some speakers were hard to follow.</li>
+                    <li>Good networking opportunities.</li>
+                </ul>
+            </div>
+            <div class="event-review review-background">
+                <h2>UW vs. UCLA Football Game</h2>
+                <p>Overall Rating: 4.5/5</p>
+                <p>Comments:</p>
+                <ul>
+                    <li>Amazing event! Everything was well-planned.</li>
+                    <li>The game was really good and speakers were good.</li>
+                    <li>Can't wait for the next one!</li>
+                </ul>
+            </div>
+            <form class="upload-form-container">
+                <div class="upload-form-item">
+                    <h2>Add a Review</h2>
+                </div>
+                <div class="upload-form-item">
+                    <label for="event-name">Event Name:</label>
+                    <input type="text" id="event-name" name="event-name" required>
+
+                    <label for="rating">Rating:</label>
+                    <select id="rating" name="rating" required>
+                        <option value="">--Please select a rating--</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" required></textarea>
+
+                    <button type="submit">Submit Review</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <p><a href="mailto:contact@hef.uw.edu"><span class="material-icons">email: </span>contact@hef.uw.edu</a></p>
+            <p><a href="tel:206-532-6703"><span class="material-icons">phone: </span>206-532-6703</a></p>
+            <p>&copy; University of Washington 2023</p>
+        </div>
+    </footer>
+</body>
+
+</html>
