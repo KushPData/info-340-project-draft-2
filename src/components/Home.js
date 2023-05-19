@@ -1,5 +1,6 @@
 import React from 'react';
 import { Header } from './Header';
+import { Footer } from './Footer';
 import EventItemsList from './EventItemsList';
 
 export function Home(props) {

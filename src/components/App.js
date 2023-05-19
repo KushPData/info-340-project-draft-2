@@ -6,8 +6,8 @@ function App(props) {
     return (
         <div>
             {/* <Home events={props.events} pastEvents={props.pastEvents}/> */}
-            <Calendar />
-            {/* <Upload /> */}
+            {/* <Calendar /> */}
+            <Upload />
             {/* <Review /> */}
         </div>
     )
