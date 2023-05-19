@@ -4,7 +4,7 @@ import { Home } from './Home';
 function App(props) {
     return (
         <div>
-            <Home />
+            <Home events={props.events}/>
             {/* <Calendar /> */}
             {/* <Upload /> */}
             {/* <Review /> */}

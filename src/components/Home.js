@@ -1,4 +1,6 @@
 import React from 'react';
+import { Header } from './Header';
+import EventItemsList from './EventItemsList';
 
 export function Home(props) {
     return (
@@ -39,9 +41,7 @@ export function Home(props) {
                 </div>
 
                 <div className="upcoming-events-container">
-                    <div className="events-title">
-                        <h3>Upcoming Events</h3>
-                    </div>
+                    <EventItemsList events={props.events}/>
                 </div>
             </main>
         </div>
