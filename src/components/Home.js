@@ -5,6 +5,14 @@ import EventItemsList from './EventItemsList';
 export function Home(props) {
     return (
         <div>
+            <nav className="nav-sm">
+                <ul>
+                    <li><a href="#/" className="active">Home</a></li>
+                    <li><a href="#/">Calendar</a></li>
+                    <li><a href="#/">Upload</a></li>
+                    <li><a href="#/">Review</a></li>
+                </ul>
+            </nav>
             <Header />
             <main>
                 <div className="main-box-lg">
@@ -45,13 +53,22 @@ export function Home(props) {
                         <h3>Upcoming Events</h3>
                     </div>
                     <EventItemsList events={props.events} />
+                </div>
 
+                <div className="past-events-container">
                     <div className="events-title">
                         <h3>Past Events</h3>
                     </div>
                     <EventItemsList events={props.pastEvents} />
                 </div>
             </main>
+            <footer>
+                <div className="footer-container">
+                    <p><a href="mailto:contact@hef.uw.edu"><span className="material-icons">email: </span>contact@hef.uw.edu</a></p>
+                    <p><a href="tel:206-532-6703"><span className="material-icons">phone: </span>206-532-6703</a></p>
+                    <p>&copy; University of Washington 2023</p>
+                </div>
+            </footer>
         </div>
     );
 }
