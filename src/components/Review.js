@@ -1,12 +1,32 @@
 import React from 'react';
+import { useState } from 'react';
 import { Header } from './Header';
 import { LargeMenu } from './LargeMenu';
 import { LargeSearch } from './LargeSearch';
 import { SearchBox } from './SearchBox';
 import { Footer } from './Footer';
-import { UploadFormItem } from './UploadFormItem';
+import { ReviewPane } from './ReviewPane';
 
 export function Review(props) {
+    const [messageObjArray, setMessageObjArray] = useState(props.currentReviews);
+    const [currentUser, setCurrentUser] = useState({userId: null, userName: null});
+
+    const loginUser = (userObj) => {
+        setCurrentUser(userObj);
+    }
+
+    const addMessage = (userObj, text) => {
+        const newMessageObj = {
+            "userId": userObj.userId,
+            "userName": userObj.userName,
+            "text": text,
+            "timestamp": Date.now()
+        }
+
+        const newMessageArray = [...messageObjArray, newMessageObj];
+        setMessageObjArray(newMessageArray);
+    }
+
     return (
         <div>
             <nav className="nav-sm">
@@ -31,6 +51,10 @@ export function Review(props) {
                 </div>
 
                 <SearchBox />
+
+                <div className="overview-reviews-container">
+                    <ReviewPane currentUser={currentUser} messageArray={messageObjArray} howToAddAMessage={addMessage} />
+                </div>
             </main>
             <Footer />
         </div>

@@ -11,8 +11,8 @@ function App(props) {
             {/* <Home events={props.events} pastEvents={props.pastEvents} /> */}
             {/* <Calendar /> */}
             {/* <Upload list={props.uploadEventsList} /> */}
-            {/* <Review />  */}
-            <EventExample />
+            <Review currentReviews={props.currentReviews}/>
+            {/* <EventExample /> */}
         </div>
     )
 }
