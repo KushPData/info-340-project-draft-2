@@ -11,7 +11,7 @@ export function EventExample(props) {
         <div>
             <nav className="nav-sm">
                 <ul>
-                    <li><a href="#/" className="active">Home</a></li>
+                    <li><a href="#/">Home</a></li>
                     <li><a href="#/">Calendar</a></li>
                     <li><a href="#/">Upload</a></li>
                     <li><a href="#/">Review</a></li>
