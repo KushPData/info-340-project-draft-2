@@ -16,7 +16,7 @@ export function Calendar(props) {
                     <li><a href="#/">Review</a></li>
                 </ul>
             </nav>
-            <Header images={props.images}/>
+            <Header />
             <main>
                 <div className="main-box-lg">
 
@@ -33,13 +33,13 @@ export function Calendar(props) {
 
                 <div className="calendar-container">
                     <div className="calendar-item">
-                        <img className="month-calendar" src={props.images.exampleMonthCalendar} alt="calendar in month layout of may 2023" />
+                        <img className="month-calendar" src="../../public/example-month-calendar.png" alt="calendar in month layout of may 2023" />
                     </div>
                 </div>
 
                 <div class="calendar-container">
                     <div class="calendar-item">
-                        <img class="day-calendar" src={props.images.exampleDayCalendar} alt="calendar in day layout of may 2023" />
+                        <img class="day-calendar" src="../../public/example-day-calendar.png" alt="calendar in day layout of may 2023" />
                     </div>
                 </div>
             </main>

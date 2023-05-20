@@ -7,10 +7,10 @@ import { Review } from './Review';
 function App(props) {
     return (
         <div>
-            {/* <Home events={props.events} pastEvents={props.pastEvents} images={props.images}/>*/}
-            {/* <Calendar images={props.images}/> */}
-            {/* <Upload list={props.uploadEventsList} images={props.images}/> */}
-            <Review images={props.images}/> 
+            <Home events={props.events} pastEvents={props.pastEvents} />
+            {/* <Calendar /> */}
+            {/* <Upload list={props.uploadEventsList} /> */}
+            {/* <Review /> */} 
         </div>
     )
 }
