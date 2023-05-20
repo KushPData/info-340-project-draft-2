@@ -9,7 +9,7 @@ import { ReviewPane } from './ReviewPane';
 
 export function Review(props) {
     const [messageObjArray, setMessageObjArray] = useState(props.currentReviews);
-    const [currentUser, setCurrentUser] = useState({userId: null, userName: null});
+    const [currentUser, setCurrentUser] = useState({ userId: null, userName: null });
 
     const loginUser = (userObj) => {
         setCurrentUser(userObj);
@@ -18,7 +18,6 @@ export function Review(props) {
     const addMessage = (userObj, text) => {
         const newMessageObj = {
             "userId": userObj.userId,
-            "userName": userObj.userName,
             "text": text,
             "timestamp": Date.now()
         }

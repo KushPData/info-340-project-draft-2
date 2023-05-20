@@ -15,14 +15,13 @@ export function ReviewPane(props) {
     });
 
     return (
-        <>
+        <div className="overview-reviews-container">
+            <ReviewForm currentUser={currentUser} howToAddAMessage={howToAddAMessage} />
             <div className="scrollable-pane">
                 {messageObjArray.length === 0 && <p>No reviews found</p>}
                 {messageElemArray}
             </div>
-
-            <ReviewForm currentUser={currentUser} howToAddAMessage={howToAddAMessage} />
-        </>
+        </div>
     )
 }
 
@@ -31,11 +30,9 @@ function ReviewItem(props) {
     const text = props.text;
 
     return (
-        <div>
-            <div>
-                <p>{userName}</p>
-                <p>{text}</p>
-            </div>
+        <div className="event-review review-background">
+            <p>{userName}</p>
+            <p>{text}</p>
         </div>
     )
 }

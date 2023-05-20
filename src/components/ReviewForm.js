@@ -18,14 +18,22 @@ export function ReviewForm(props) {
     }
 
     return (
-        <form>
-            <div>
-                <textarea onChange={handleChange} value={typedValue} placeholder="Name of the event"></textarea>
-                <textarea onChange={handleChange} value={typedValue} placeholder="Enter your review here"></textarea>
-                <button onClick={handleClick} type="button">
-                    <span className="material-icons">Post</span>
-                </button>
-            </div>
-        </form>
+        <>
+            <form className="upload-form-container">
+                <div className="upload-form-item">
+                    <h2>Add a Review</h2>
+                </div>
+                <div className="upload-form-item">
+                    <textarea onChange={handleChange} value={typedValue} placeholder="Enter your review here"></textarea>
+                    <button onClick={handleClick} type="button">
+                        <span className="material-icons">Post</span>
+                    </button>
+                </div>
+                <div className="upload-form-item">
+                    <p>Please post your review in the following format:</p>
+                    <p>Name of the Event - *Rating from 1 to 5* - *Your comments*</p>
+                </div>
+            </form>
+        </>
     );
 }

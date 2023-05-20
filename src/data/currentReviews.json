@@ -1,29 +1,13 @@
 [
     {
-        "userId": "kush",
-        "userName": "Kush",
-        "text": "Great Event",
+        "userId": "hoc",
+        "text": "EXHIBIT: History of Costume - 4 - Amazing event, but could use better time management. Interesting activities, but some speakers were hard to follow. ",
         "timestamp": 1320161040000
     },
 
     {
-        "userId": "anna",
-        "userName": "Anna",
-        "text": "Loved it!!!",
+        "userId": "winfo",
+        "text": "WINFO: Pitch Perfect - 5 - Loved it!!! Everything was well-planned. Can't wait for the next one!",
         "timestamp": 1320161760000
-    },
-
-    {
-        "userId": "anay",
-        "userName": "Anay",
-        "text": "The speakers were awesome!",
-        "timestamp": 1320162060000
-    },
-
-    {
-        "userId": "nate",
-        "userName": "Nate",
-        "text": "Had so much fun dancing!!",
-        "timestamp": 1320162120000
     }
 ]
