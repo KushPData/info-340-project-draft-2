@@ -51,6 +51,7 @@ export function EventExample(props) {
                     </div>
                 </div>
             </main>
+            <Footer />
         </div>
     )
 }
