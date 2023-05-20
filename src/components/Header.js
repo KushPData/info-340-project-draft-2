@@ -1,10 +1,12 @@
 import React from 'react';
+import UWLogo from '../images/UW_Logo.png';
+import ProfilePicture from '../images/user.jpg'
 
 export function Header(props) {
     return (
         <header className="header-container">
             <div className="header-item">
-                <img className="uw-logo" src="../../public/UW_Logo.png" alt="University of Washington logo" />
+                <img className="uw-logo" src={UWLogo} alt="University of Washington logo" />
             </div>
 
             <div className="header-item">
@@ -12,7 +14,7 @@ export function Header(props) {
             </div>
 
             <div className="header-item">
-                <img className="user-pic" src="../../public/user.jpg" alt="User Picture" />
+                <img className="user-pic" src={ProfilePicture} alt="User Picture" />
             </div>
         </header>
     );

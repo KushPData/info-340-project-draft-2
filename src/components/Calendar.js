@@ -4,6 +4,8 @@ import { LargeMenu } from './LargeMenu';
 import { LargeSearch } from './LargeSearch';
 import { SearchBox } from './SearchBox';
 import { Footer } from './Footer';
+import MonthCalendar from '../images/example-month-calendar.png';
+import DayCalendar from '../images/example-day-calendar.png';
 
 export function Calendar(props) {
     return (
@@ -33,13 +35,13 @@ export function Calendar(props) {
 
                 <div className="calendar-container">
                     <div className="calendar-item">
-                        <img className="month-calendar" src="../../public/example-month-calendar.png" alt="calendar in month layout of may 2023" />
+                        <img className="month-calendar" src={MonthCalendar} alt="calendar in month layout of may 2023" />
                     </div>
                 </div>
 
                 <div class="calendar-container">
                     <div class="calendar-item">
-                        <img class="day-calendar" src="../../public/example-day-calendar.png" alt="calendar in day layout of may 2023" />
+                        <img class="day-calendar" src={DayCalendar} alt="calendar in day layout of may 2023" />
                     </div>
                 </div>
             </main>

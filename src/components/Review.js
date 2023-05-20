@@ -13,8 +13,8 @@ export function Review(props) {
                 <ul>
                     <li><a href="#/">Home</a></li>
                     <li><a href="#/">Calendar</a></li>
-                    <li><a href="#/" className="active">Upload</a></li>
-                    <li><a href="#/">Review</a></li>
+                    <li><a href="#/">Upload</a></li>
+                    <li><a href="#/" className="active">Review</a></li>
                 </ul>
             </nav>
             <Header />
