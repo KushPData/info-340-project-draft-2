@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example with Tables</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Example</h1>
+    <form id="myForm">
+        <label for="text">Text Input:</label>
+        <input type="text" id="text" name="text" required><br>
+
+        <label>Radio Input:</label>
+        <input type="radio" id="radioOption1" name="radio" value="Option 1">
+        <label for="radioOption1">Option 1</label>
+        <input type="radio" id="radioOption2" name="radio" value="Option 2">
+        <label for="radioOption2">Option 2</label><br>
+
+        <label>Checkbox Input:</label>
+        <input type="checkbox" id="checkbox1" name="checkbox1" value="Checkbox 1">
+        <label for="checkbox1">Checkbox 1</label>
+        <input type="checkbox" id="checkbox2" name="checkbox2" value="Checkbox 2">
+        <label for="checkbox2">Checkbox 2</label><br>
+
+        <label for="date">Date Input:</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="dropdown">Dropdown Input:</label>
+        <select id="dropdown" name="dropdown">
+            <option value="Option 1">Option 1</option>
+            <option value="Option 2">Option 2</option>
+            <option value="Option 3">Option 3</option>
+        </select><br>
+
+        <input type="button" value="Submit" id="submitButton">
+    </form>
+
+    <h2>Values Entered:</h2>
+    <table id="displayTable">
+        <tr>
+            <th>Field</th>
+            <th>Value</th>
+        </tr>
+    </table>
+
+    <script>
+        // Add an event listener to the "Submit" button
+        document.getElementById("submitButton").addEventListener("click", displayValues);
+
+        function displayValues() {
+            const form = document.getElementById("myForm");
+            const displayTable = document.getElementById("displayTable");
+            displayTable.innerHTML = ""; // Clear previous content
+
+            const dataRows = [];
+
+            // Text input value
+            const textInput = form.elements["text"].value;
+            dataRows.push(createDataRow("Text Input:", textInput));
+
+            // Radio input value
+            let radioInput = '';
+            const radioOptions = form.elements["radio"];
+            for (const option of radioOptions) {
+                if (option.checked) {
+                    radioInput = option.value;
+                    break;
+                }
+            }
+            dataRows.push(createDataRow("Radio Input:", radioInput));
+
+            // Checkbox input value(s)
+            const checkboxes = form.querySelectorAll('input[type="checkbox"]');
+            let checkboxInputs = [];
+            for (const checkbox of checkboxes) {
+                if (checkbox.checked) {
+                    checkboxInputs.push(checkbox.value);
+                }
+            }
+            dataRows.push(createDataRow("Checkbox Input:", checkboxInputs.join(", ")));
+
+            // Date input value
+            const dateInput = form.elements["date"].value;
+            dataRows.push(createDataRow("Date Input:", dateInput));
+
+            // Dropdown input value
+            const dropdownInput = form.elements["dropdown"].value;
+            dataRows.push(createDataRow("Dropdown Input:", dropdownInput));
+
+            // Add the data rows to the table
+            for (const row of dataRows) {
+                displayTable.appendChild(row);
+            }
+        }
+
+        function createDataRow(label, value) {
+            const row = document.createElement("tr");
+
+            const labelCell = document.createElement("td");
+            labelCell.textContent = label;
+            row.appendChild(labelCell);
+
+            const valueCell = document.createElement("td");
+            valueCell.textContent = value;
+            row.appendChild(valueCell);
+
+            return row;
+        }
+    </script>
+</body>
+</html>
